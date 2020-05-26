@@ -37,7 +37,7 @@ publishing {
                 "https://api.bintray.com/maven/" +
                         "$bintrayUsername/$bintrayRepoName/$bintrayPackageName/;" +
                         "publish=0;" + // Never auto-publish to allow override.
-                        "override=1"            )
+                        "override=0")
             credentials {
                 username = "jwstegemann"
                 password = System.getenv("BINTRAY_API_KEY")
